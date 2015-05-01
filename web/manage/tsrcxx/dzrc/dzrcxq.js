@@ -1,4 +1,5 @@
 $(function() {
+    console.info("ryid:"+ryid);
     validate();
 });
 function loadDitgride() {

@@ -32,7 +32,7 @@
         </style>
     </head>
     <body>
-        <div title="创业人才信息" class="easyui-dialog"  id="cyrc_dialog"  closable="false" draggable="false" style="padding:10px;width: 830px;">
+        <div title="创业人才信息"   id="cyrc_dialog"  closable="false" draggable="false" style="padding:10px;width: 830px;">
             <table id="table1">
                 <tr>
                     <td>单位名称：</td><td><input id="dwmc" class="headMsg" style="width:180px;height:20px;" readonly="true" name="dwmc" /></td>
@@ -40,12 +40,13 @@
                     <td>性别：</td><td><input id="xb" class="headMsg" name="xb" readonly="true" style="width:auto;height:20px" /></td>
                 </tr>
                 <tr>
-                    <td style="width:180px">身份证（护照）号码：</td><td><input id="zjhm" class="headMsg" style="width:180px;height:20px" readonly="true" name="zjhm" /></td>
+                    <td style="width:180px">身份证(护照)：</td><td><input id="zjhm" class="headMsg" style="width:180px;height:20px" readonly="true" name="zjhm" /></td>
                 </tr>
             </table>
-            <fieldset style="border:#D3D3D3 solid 1px;margin: 10px;height: 315px;">
-                <legend style="margin:5px 25px 10px;font-weight: bold;">创业人才信息</legend>
+            
                 <form method="post" id="cyrctj">
+                <fieldset style="border:#D3D3D3 solid 1px;margin: 10px;height: 328px;">
+                <legend style="margin:5px 25px 10px;font-weight: bold;">创业人才信息</legend>
                     <div>
                         <table id="table2">
                             <tr>
@@ -75,8 +76,9 @@
                         <a id="dialog_add" href="javascript:"onclick="add();" style="display: none" class="easyui-linkbutton" iconCls="icon-add">添加</a>
                         <a id="dialog_delete" href="javascript:" onclick="del();" style="display: none" class="easyui-linkbutton" iconCls="icon-cancel">删除</a>
                     </div>
+                </fieldset>
                 </form>
-            </fieldset>
+            
         </div>
     </div>
 </body>

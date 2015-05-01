@@ -88,7 +88,7 @@ function data(){
             align: 'center',
             width:80,
             formatter:function(value,rowData,rowIndex){
-                return "<a href='javascript:void(0)' onclick='window.parent.addTab(\"manage/tsrcxx/dzrc/DzrccxAction.jsp?mode=SHOWONE&dzrcid="+rowData.dzrcid+"\",\""+rowData.xm+"的详细信息\")'>详情</a>";
+                return "<a href='javascript:void(0)' onclick='window.parent.addTab(\"manage/tsrcxx/dzrc/DzrccxAction.jsp?mode=SHOWONE&ryid="+rowData.ryid+"\",\""+rowData.xm+"的详细信息\")'>详情</a>";
             }
         }
         ]]

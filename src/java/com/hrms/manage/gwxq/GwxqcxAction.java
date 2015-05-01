@@ -113,7 +113,7 @@ public class GwxqcxAction extends HttpServlet {
         String gwxq = request.getParameter("gwxq");
         DatabaseAccess dao = new DatabaseAccess();//数据库放在外面
         EasyMapsManager emm = new EasyMapsManager(dao);
-        String sql = "SELECT `xqgw`.`fbsj`, `xqgw`.`xqgw`, `xqgw`.`zy`, `xqgw`.`rs`, `xqgw`.`yjfs`,`xqgw`.`gwyq`, `xqgw`.`dy`, `xl`.`xlmc`, `xw`.`xwmc`, `gzdw`.`dwmc` FROM `xqgw` LEFT JOIN `xl` ON `xqgw`.`xlbm` = `xl`.`xlbm` LEFT JOIN `xw` ON `xqgw`.`xwbm` = `xw`.`xwbm` LEFT JOIN `gzdw` ON `xqgw`.`xqgwid` = `gzdw`.`gzdwid`";
+        String sql = "SELECT `xqgw`.`fbsj`, `xqgw`.`xqgw`, `xqgw`.`zy`, `xqgw`.`rs`, `xqgw`.`yjfs`,`xqgw`.`gwyq`, `xqgw`.`dy`, `xl`.`xlmc`, `xw`.`xwmc`, `gzdw`.`dwmc` FROM `xqgw` LEFT JOIN `xl` ON `xqgw`.`xlbm` = `xl`.`xlbm` LEFT JOIN `xw` ON `xqgw`.`xwbm` = `xw`.`xwbm` LEFT JOIN `gzdw` ON `xqgw`.`dwid` = `gzdw`.`gzdwid`";
         String where = " where 1=1 ";
         if (!Util.isEmpty(dwxzbm) || !Util.isEmpty(dwlbbm) || !Util.isEmpty(sshybm) || !Util.isEmpty(gzdwbm) || !Util.isEmpty(gwxq)) {
             if (!Util.isEmpty(dwxzbm)) {

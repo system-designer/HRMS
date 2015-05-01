@@ -97,7 +97,7 @@ function loadDwxxDate(){
             width:100,
             align:"center"
         }
-        ]],
+        ]]
     });  
 }
 /**
@@ -110,14 +110,18 @@ function loadGwtj(){
 
 
 function getGzdw(){
+            console.info("data");
     $.ajax({
         url: path + 'gwxq/GwxqAction.jsp?mode=getgzdw',
         type: 'post',
-        dataType:'html',
+        dataType:'json',
         success: function(data) {
+            console.info(data);
             if (data !== null) {
-                $('input:[id=dwmc]').val(data);
-                $('input:[id=yrdwa]').val(data);
+                $('#cur_dwmc').val(data.gzdwmc);
+                $('#add_dwid').val(data.gzdwid);
+                $('#yrdwa').val(data.gzdwmc);
+                $('#update_dwid').val(data.gzdwid);
             }
         }
     });

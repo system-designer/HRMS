@@ -137,7 +137,7 @@ public class SearchAction extends HttpServlet {
 //        System.out.println("--------------------");
 
         DatabaseAccess dao = new DatabaseAccess();
-        StringBuilder where = new StringBuilder(" where 1=1 ");
+        StringBuilder where = new StringBuilder(" where sfgjnrc=1 ");
         if (dwxz != null && !dwxz.equals("")) {
             where.append("and `gzdw`.`dwxzbm`=? ");
             dao.setPreparedParameter(dwxz);

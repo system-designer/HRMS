@@ -112,10 +112,12 @@ public class DzrccxAction extends HttpServlet {
 
     private void showOne(HttpServletRequest request, HttpServletResponse response) {
         DatabaseAccess dao = null;
+        int dzrcid = 1;
         try {
-            int dzrcid = 1;
+
             try {
-                dzrcid = Integer.parseInt(request.getParameter("dzrcid"));
+                dzrcid = Integer.parseInt(request.getParameter("ryid"));
+                request.setAttribute("ryid", dzrcid);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -135,14 +137,14 @@ public class DzrccxAction extends HttpServlet {
                     + "  `xl` ON `jbxx`.`xlbm` = `xl`.`xlbm` LEFT JOIN\n"
                     + "  `zj` ON `jbxx`.`zjbm` = `zj`.`zjbm` INNER JOIN\n"
                     + "  `dzrc` ON `jbxx`.`ryid` = `dzrc`.`ryid` INNER JOIN\n"
-                    + "  `zzmm` ON `jbxx`.`zzmmbm` = `zzmm`.`zzmmbm`, `jl` where dzrcid=?;";
+                    + "  `zzmm` ON `jbxx`.`zzmmbm` = `zzmm`.`zzmmbm`left join\n"
+                    + "   jl on jbxx.ryid=jl.ryid where `jbxx`.`ryid`=?";
             emm.setPreparedParameter(dzrcid);
             List list = emm.executeQuery(jbxxsql);
-            System.out.println(list.toString());
             request.setAttribute("list", list);
-            request.getRequestDispatcher("/manage/tsrcxx/dzrc/dzrcxq.jsp").forward(request, response);
+            request.getRequestDispatcher("/manage/tsrcxx/dzrc/dzrcxq.jsp?ryid=" + dzrcid).forward(request, response);
         } catch (ServletException ex) {
-            Logger.getLogger(CyrccxAction.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DzrccxAction.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(CyrccxAction.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
@@ -277,7 +279,6 @@ public class DzrccxAction extends HttpServlet {
             emm.setPreparedParameter(ryid);
             List list = emm.executeQuery(sql, datagrid);
             datagrid.putAll(list);
-            System.out.println(datagrid.toDataString());
             ServletUtil.ajaxData(datagrid.toDataString(), response);
         } finally {
             dao.close();
@@ -288,7 +289,6 @@ public class DzrccxAction extends HttpServlet {
         DatabaseAccess dao = new DatabaseAccess();
         EasyMapsManager emm = new EasyMapsManager(dao);
         String dwmcpy = request.getParameter("input_id");
-        System.out.println(dwmcpy);
         String json = "";
         String where = "";
         if (!Util.isEmpty(dwmcpy)) {

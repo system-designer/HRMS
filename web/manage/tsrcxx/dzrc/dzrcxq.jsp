@@ -20,7 +20,8 @@
         <title>党政人才详情</title>        
         <script>
             var path = '<z:path/>';
-            var ryid = '${requestScope.list[0].ryid}';
+            var ryid = '${requestScope.ryid}';
+            console.info(ryid);
         </script>
         <style>
             .headMsg{

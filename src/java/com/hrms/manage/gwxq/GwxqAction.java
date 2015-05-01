@@ -126,8 +126,10 @@ public class GwxqAction extends HttpServlet {
         DatabaseAccess db = new DatabaseAccess();
         EasyMapsManager em = new EasyMapsManager(db);
         String sql = "SELECT `xqgw`.`xqgwid`, `xqgw`.`dwid`, `xqgw`.`fbsj`, `xqgw`.`xqgw`, `xqgw`.`zy`, `xqgw`.`xlbm`, `xqgw`.`xwbm`, `xqgw`.`rs`, `xqgw`.`yjfs`, `xqgw`.`gwyq`,  `xqgw`.`dy`, `xl`.`xlmc`, `xw`.`xwmc`FROM`xqgw` LEFT JOIN`xl` ON `xqgw`.`xlbm` = `xl`.`xlbm` LEFT JOIN`xw` ON `xqgw`.`xwbm` = `xw`.`xwbm`";
+        Yh yh = (Yh) request.getSession().getAttribute("user");
+        String where = " where `xqgw`.`dwid`=" + yh.getGzdwid();
         EasyUiJson datagrid = new EasyUiJson(request);
-        List list = em.executeQuery(sql, datagrid);
+        List list = em.executeQuery(sql + where, datagrid);
         db.close();//要先关闭数据库
         datagrid.putAll(list);
         ServletUtil.ajaxData(datagrid.toDataString(), response);
@@ -218,7 +220,6 @@ public class GwxqAction extends HttpServlet {
         DatabaseAccess dao = new DatabaseAccess();
         EasyMapsManager emm = new EasyMapsManager(dao);
         String dwmcpy = request.getParameter("input_id");
-        System.out.println(dwmcpy);
         String json = "";
         if (!Util.isEmpty(dwmcpy)) {
             emm.setPreparedParameter(dwmcpy + "%");
@@ -236,9 +237,9 @@ public class GwxqAction extends HttpServlet {
 
     private void getGzdw(HttpServletRequest request, HttpServletResponse response) {
         Yh yh = (Yh) request.getSession().getAttribute("user");
-        System.out.println(yh.getGzdwid());
         Gzdw gzdw = new Gzdw();
         gzdw = new Hyberbin(new Gzdw()).showOne("select * from gzdw where gzdwid=" + yh.getGzdwid());
-        ServletUtil.ajaxData(gzdw.getDwmc(), response);
+        String json = "{\"gzdwid\":" + gzdw.getGzdwid() + ",\"gzdwmc\":\"" + gzdw.getDwmc() + "\"}";
+        ServletUtil.ajaxData(json, response);
     }
 }

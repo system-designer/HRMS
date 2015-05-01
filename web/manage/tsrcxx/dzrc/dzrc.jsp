@@ -42,9 +42,9 @@
                     <td style="width:130px">身份证(护照)：</td><td><input class="headMsg" id="zjhm" style="width:240px;height:20px"disabled="true" name="zjhm" /></td><td>职&nbsp;&nbsp;&nbsp;&nbsp;级：</td><td><input class="headMsg"id="zjmc" name="zjmc" disabled="true" style="width:auto;height:20px" /></td><td>职&nbsp;&nbsp;&nbsp;&nbsp;务：</td><td><input class="headMsg" id="zw" name="zw" disabled="true" style="width:auto;height:20px" /></td>
                 </tr>
             </table>
-            <fieldset style="border:#D3D3D3 solid 1px;margin: 10px;height: 200px;">
-                <legend style="margin:5px 25px 10px;font-weight: bold;">党政人才信息</legend>
-                <form id="dzrcxx" method="post">
+            <form id="dzrcxx" method="post">
+                <fieldset style="border:#D3D3D3 solid 1px;margin: 10px;height: 200px;width:800px">
+                    <legend style="margin:5px 25px 10px;font-weight: bold;">党政人才信息</legend>
                     <table id="table2">
                         <tr>
                             <td>任现职级（职务）时间：</td><td><input id="rxzsj" name="rxzsj" style="width:150px;height:20px"/></td> 
@@ -58,14 +58,14 @@
                         <tr>
                             <td>近三年考核情况：</td><td><input id="khqk3" name="khqk3" style="width:150px;height:20px" /></td>
                         </tr>
-                    </table><br/><br/>
-                    <div id="dialog_buttons" style="text-align: center" >
-                        <a id="dialog_button_update" href="javascript:" onclick="updatedzrc();" style="display: none" class="easyui-linkbutton" iconCls="icon-ok">修改</a>
-                        <a id="dialog_button_add" href="javascript:"onclick="adddzrc();" style="display: none" class="easyui-linkbutton" iconCls="icon-add">添加</a>
-                        <a id="dialog_button_delete" href="javascript:" onclick="deletedzrc();" style="display: none" class="easyui-linkbutton" iconCls="icon-cancel">删除</a>
-                    </div>
-                </form>
-            </fieldset>
+                    </table>
+                </fieldset>
+            </form>
+            <div id="dialog_buttons" style="text-align: center" >
+                <a id="dialog_button_update" href="javascript:" onclick="updatedzrc();" style="display: none" class="easyui-linkbutton" iconCls="icon-ok">修改</a>
+                <a id="dialog_button_add" href="javascript:"onclick="adddzrc();" style="display: none" class="easyui-linkbutton" iconCls="icon-add">添加</a>
+                <a id="dialog_button_delete" href="javascript:" onclick="deletedzrc();" style="display: none" class="easyui-linkbutton" iconCls="icon-cancel">删除</a>
+            </div>
         </div>
     </body>
 </html>

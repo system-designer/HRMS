@@ -139,7 +139,7 @@ public class SearchAction extends HttpServlet {
 //        System.out.println("--------------------");
 
         DatabaseAccess dao = new DatabaseAccess();
-        StringBuilder where = new StringBuilder(" where 1=1 ");
+        StringBuilder where = new StringBuilder(" where sfgjnrc=1 ");
         if (dwxz != null && !dwxz.equals("")) {
             where.append("and `gzdw`.`dwxzbm`=? ");
             dao.setPreparedParameter(dwxz);
@@ -182,16 +182,13 @@ public class SearchAction extends HttpServlet {
         Yh yh = (Yh) session.getAttribute("user");
         String jb = yh.getJb();//用户级别
         Integer gzdwid = yh.getGzdwid();//用户工作单位id
-        String sss = jb.equals("1") ? "" : jb.equals("2") ? " and `gzdw`.`gzdwid`=" + gzdwid + " or `gzdw`.`sjdwid`=" + gzdwid : " and `gzdw`.`gzdwid`=" + gzdwid;
-        System.out.println("---->" + sss);
-
         String sql = "SELECT "
                 + "`jbxx`.`xm`, `jbxx`.`xb`, `jbxx`.`csrq`, `xl`.`xlmc`, `jbxx`.`ryid`, "
                 + "`gzdw`.`dwmc` "
                 + "FROM "
                 + "`jbxx` INNER JOIN "
                 + "`xl` ON `jbxx`.`xlbm` = `xl`.`xlbm` INNER JOIN "
-                + "`gzdw` ON `jbxx`.`gzdwid` = `gzdw`.`gzdwid` " + where.toString() + sss;
+                + "`gzdw` ON `jbxx`.`gzdwid` = `gzdw`.`gzdwid` " + where.toString();
         EasyMapsManager emm = new EasyMapsManager(dao);
         EasyUiJson datagrid = new EasyUiJson(request);
         ArrayList<HashMap> dwList = emm.executeQuery(sql, datagrid);
@@ -220,7 +217,7 @@ public class SearchAction extends HttpServlet {
             }
             dao = new DatabaseAccess();
             EasyMapsManager emm = new EasyMapsManager(dao);
-            String jbxxsql = "SELECT   `cyrc`.`yrzjg`,   `cyrc`.`yzw`,   `cyrc`.`zhgzsj`,   `cyrc`.`email`,   `cyrc`.`yjzdz`,   `cyrc`.`zyry`,   `jbxx`.`zjhm`,   `jbxx`.`xm`,   `jbxx`.`xb`, `jbxx`.`zp`,   `jbxx`.`gzdwid`,  `jbxx`.`csrq`,   `jbxx`.`mz`,   `jbxx`.`jg`,   `gzdw`.`dwmc`,   `jl`.`xxjl`,   `jl`.`gzjl`,   `jl`.`jcqk`,   `xw`.`xwmc`,   `xl`.`xlmc`,   `jbxx`.`gzsj`,   `jbxx`.`rdsj`,   `jbxx`.`zw`,   `zj`.`zjmc`,   `jbxx`.`lxdh`,   `jbxx`.`txdz`,   `jbxx`.`jkzk`,   `jbxx`.`hyzkbm`,   `jbxx`.`zymc`,   `jbxx`.`byxx`,   `jbxx`.`yzbm` FROM   `jbxx`  LEFT  JOIN `cyrc` ON `cyrc`.`ryid` = `jbxx`.`ryid`  LEFT  JOIN `gzdw` ON `jbxx`.`gzdwid` = `gzdw`.`gzdwid`   LEFT JOIN `jl` ON `cyrc`.`cyrcid` = `jl`.`jlid`  LEFT  JOIN `xw` ON `jbxx`.`xwbm` = `xw`.`xwbm`   LEFT JOIN `xl` ON `jbxx`.`xlbm` = `xl`.`xlbm` LEFT  JOIN `zj` ON `jbxx`.`zjbm` = `zj`.`zjbm` where `jbxx`.`ryid`=?;";
+            String jbxxsql = "SELECT   `cyrc`.`yrzjg`,   `cyrc`.`yzw`,   `cyrc`.`zhgzsj`,   `cyrc`.`email`,   `cyrc`.`yjzdz`,   `cyrc`.`zyry`,   `jbxx`.`zjhm`,   `jbxx`.`xm`,   `jbxx`.`xb`, `jbxx`.`zp`,   `jbxx`.`gzdwid`,  `jbxx`.`csrq`,   `jbxx`.`mz`,   `jbxx`.`jg`,   `gzdw`.`dwmc`,   `jl`.`xxjl`,   `jl`.`gzjl`,   `jl`.`jcqk`,   `xw`.`xwmc`,   `xl`.`xlmc`,   `jbxx`.`gzsj`,   `jbxx`.`rdsj`,   `jbxx`.`zw`,   `zj`.`zjmc`,   `jbxx`.`lxdh`,   `jbxx`.`txdz`,   `jbxx`.`jkzk`,   `jbxx`.`hyzkbm`,   `jbxx`.`zymc`,   `jbxx`.`byxx`,   `jbxx`.`yzbm` FROM   `jbxx`  LEFT  JOIN `cyrc` ON `cyrc`.`ryid` = `jbxx`.`ryid`  LEFT  JOIN `gzdw` ON `jbxx`.`gzdwid` = `gzdw`.`gzdwid`   LEFT JOIN `jl` ON `cyrc`.`ryid` = `jl`.`ryid`  LEFT  JOIN `xw` ON `jbxx`.`xwbm` = `xw`.`xwbm`   LEFT JOIN `xl` ON `jbxx`.`xlbm` = `xl`.`xlbm` LEFT  JOIN `zj` ON `jbxx`.`zjbm` = `zj`.`zjbm` where `jbxx`.`ryid`=?;";
             emm.setPreparedParameter(rcid);
             List list = emm.executeQuery(jbxxsql);
             request.setAttribute("list", list);
@@ -241,11 +238,7 @@ public class SearchAction extends HttpServlet {
         Yh yh = (Yh) session.getAttribute("user");
         String jb = yh.getJb();//用户级别
         Integer gzdwid = yh.getGzdwid();//用户工作单位id
-        String sss = jb.equals("1") ? "" : jb.equals("2") ? " and `gzdw`.`gzdwid`=" + gzdwid + " or `gzdw`.`sjdwid`=" + gzdwid : " and `gzdw`.`gzdwid`=" + gzdwid;
-        if (sss != "") {
-            sss="where "+sss;
-        }
-
+        String sss  = "where sfgjnrc=1 ";
         String sql = "SELECT "
                 + "`jbxx`.`xm`, `jbxx`.`xb`, `jbxx`.`csrq`, `xl`.`xlmc`, `jbxx`.`ryid`, "
                 + "`gzdw`.`dwmc` "

@@ -42,7 +42,9 @@
             <div style="font-size: 15px">
                 <table>
                     <thead>
-                    <th width="20%"></th><th width="30%"></th><th width="20%"></th><th width="30%"></th>
+                        <tr>
+                            <th width="20%"></th><th width="30%"></th><th width="20%"></th><th width="30%"></th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr><td >单位名称:</td><td width="30%"><input class="headMsg" name="dwmc" style="width:300px"  id="dwmc" readonly="true"/></td>
@@ -50,17 +52,23 @@
                         </tr>
                         <tr><td>身份证(护照):</td><td><input class="headMsg"  name="zjlb"  id="zjhm" readonly="true"/></td>
                             <td>性别:</td><td><input class="headMsg"  name="xb"  id="xb" readonly="true"/></td>
+                    </tbody>
+                </table>
+                <form id="zyjsrc" method="post">
+                    <fieldset style="border:#D3D3D3 solid 1px;margin: 10px;height: 450px;">
+                        <legend style="margin:5px 25px 10px;font-weight: bold;">专技人才信息</legend>
+                        <table>
                         <tr><td>从事专业:</td><td><input type="text" name="cszy"  id="cszy"/></td>
                             <td>工作岗位:</td><td><span><input type="text" name="gzgw" id="gzgw"/></span></td>
                         </tr>
                         <tr><td>职称类别:</td><td><input class="easyui-combobox" name="zclbbm" type="text"  id="zclb"/></td>     
                             <td>技术职称:</td><td><span><input class="easyui-combobox" name="zcbm" type="text"  id="jszc"/> </span></td>
                         </tr>
-                    </tbody>
-                </table>
-                <p style="text-align: center">获得成果、奖励（含授予荣誉称号）情况</p>
+                        </table>
+                        <p style="text-align: center">获得成果、奖励（含授予荣誉称号）情况</p>
                 <textarea style="width: 610px;height: 200px" name="hjcq" id="hjcq"></textarea>
-                <br>
+                </fieldset>
+                </form>
                 <div id="button">
                     <center>
                         <a class="easyui-linkbutton" onclick="add()" id="add">添加</a>

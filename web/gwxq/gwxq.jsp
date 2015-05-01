@@ -57,7 +57,8 @@
                     <form method="post" id="form_add">
                         <div>
                             <div style="margin-top:10px; margin-left: 10px">
-                                单位名称:<input style="width:200px;" readonly="true" id="dwid"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                
+                                <input type="hidden" name="dwid" id="add_dwid"/>
+                                单位名称:<input type="text" style="width:200px;" readonly="true" id="cur_dwmc"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                
                                 发布时间:<input type="text" name="fbsj" id="fbsj" value=""style="width: 200px" >
                             </div> 
                             <div style="margin-top:10px;margin-left: 10px">
@@ -97,6 +98,7 @@
                     <input type="hidden" id="xqgwid_hidden" value="" name="xqgwid-hidden"/>
                     <input type="hidden" id="dwid_hidden" value="" name="dwid_hidden"/>
                     <div style="margin-top:10px;margin-left: 10px">
+                        <input type="hidden" name="dwid" id="update_dwid"/>
                         用人单位<input name="yrdwc" readonly="true" id="yrdwa" style="width: 280px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         &nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp
                         发布时间<input type="text" name="fbsj" id="fbsja" value=""style="width: 100px" >
