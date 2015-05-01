@@ -1,0 +1,19 @@
+.autocomplete{
+    border: 1px solid #E6E6E6;
+    background-color: white;
+    text-align: left;
+    z-index: 2;
+    position:absolute;
+}
+.autocomplete li{
+    list-style-type: none;
+    margin-top: 3px;
+    font-size: 13px
+}
+.clickable {
+    cursor: default;
+}
+.highlight {
+    background-color: #E6E6E6;
+}
+
