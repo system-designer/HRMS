@@ -33,6 +33,9 @@ function submitForm(){
 //清空表单数据
 function clearForm(){
     $("#jlxx_form").form("clear");
+    CKEDITOR.instances.xxjl.setData("");
+    CKEDITOR.instances.gzjl.setData("");
+    CKEDITOR.instances.jcqk.setData("");
 }
 function deleteJl(){
     $.messager.confirm("提示","确认删除？",function(val){
