@@ -106,10 +106,12 @@
                     <input type="text" id="uname_crud" style="width: 275px;height: 18px;vertical-align: middle;" name="uname-crud"/>
                 </div>
                 <div class="text-align-left">
+                <span>用户姓名：</span>
+                    <input type="text" id="name_crud" style="width: 275px;height: 18px;vertical-align: middle;" name="name-crud"/>
+                </div>
+                <div class="text-align-left">
                     <span>联系电话：</span>
-                    <input type="text" id="phone_crud" style="width: 140px;height: 18px;vertical-align: middle;" name="phone-crud"/>
-                    <span>用户姓名：</span>
-                    <input type="text" id="name_crud" style="width: 60px;height: 18px;vertical-align: middle;" name="name-crud"/>
+                    <input type="text" id="phone_crud" style="width: 275px;height: 18px;vertical-align: middle;" name="phone-crud"/>
                 </div>
                 <div class="text-align-left">
                     <span style="text-align: right">用户级别：</span>
