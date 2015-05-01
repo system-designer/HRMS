@@ -33,13 +33,13 @@
         </style>
     </head>
     <body>
-        <div class="easyui-dialog" title="党政人才信息" id="dzrc_dialog" closable="false" draggable="false" style="padding:10px">
+        <div  title="党政人才信息" id="dzrc_dialog" closable="false" draggable="false" style="padding:10px">
             <table id="table1">
                 <tr>
                     <td>单位名称：</td><td><input class="headMsg" id="dwmc" style="width:300px;height:20px;" disabled="true" name="dwmc" /></td><td>姓&nbsp;&nbsp;&nbsp;&nbsp;名：</td><td><input class="headMsg"id="xm" name="xm" disabled="true" style="width:auto;height:20px"/></td><td>性&nbsp;&nbsp;&nbsp;&nbsp;别：</td><td><input class="headMsg"id="xb" name="xb" disabled="true" style="width:auto;height:20px" /></td>
                 </tr>
                 <tr>
-                    <td style="width:130px">身份证（护照）号码：</td><td><input class="headMsg" id="zjhm" style="width:240px;height:20px"disabled="true" name="zjhm" /></td><td>职&nbsp;&nbsp;&nbsp;&nbsp;级：</td><td><input class="headMsg"id="zjmc" name="zjmc" disabled="true" style="width:auto;height:20px" /></td><td>职&nbsp;&nbsp;&nbsp;&nbsp;务：</td><td><input class="headMsg" id="zw" name="zw" disabled="true" style="width:auto;height:20px" /></td>
+                    <td style="width:130px">身份证(护照)：</td><td><input class="headMsg" id="zjhm" style="width:240px;height:20px"disabled="true" name="zjhm" /></td><td>职&nbsp;&nbsp;&nbsp;&nbsp;级：</td><td><input class="headMsg"id="zjmc" name="zjmc" disabled="true" style="width:auto;height:20px" /></td><td>职&nbsp;&nbsp;&nbsp;&nbsp;务：</td><td><input class="headMsg" id="zw" name="zw" disabled="true" style="width:auto;height:20px" /></td>
                 </tr>
             </table>
             <fieldset style="border:#D3D3D3 solid 1px;margin: 10px;height: 200px;">

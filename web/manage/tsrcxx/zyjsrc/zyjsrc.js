@@ -1,3 +1,4 @@
+var seletedUser="";
 $(function() {
     sfzjrc();
     loadCombobox();
@@ -10,6 +11,8 @@ function loadCombobox() {
     $.post(path + "manage/tsrcxx/zyjsrc/ZyjsrcAction.jsp?mode=SHOWCOMBOXLIST", '', function(data) {
         if (data !== null) {
             loadComboboxData(data, new Array("zclb", "Zclb", "zclbbm", "zclbmc", false, false), new Array("jszc", "Zc", "zcbm", "zcmc", false, false));
+            $("#zclb").combobox("setValue", seletedUser.zclbbm);
+            $("#jszc").combobox("setValue", seletedUser.zcbm);    
         }
     }, "json");
 }
@@ -50,10 +53,10 @@ function del() {
             $("#dell").hide();
             $("#add").show();
             sfzjrc = data.sfzyrc;
-             $("#cszy").val("");
+            $("#cszy").val("");
             $("#gzgw").val("");
             CKEDITOR.instances.hjcq.setData("");
-             $("#zclb").combobox("clear");
+            $("#zclb").combobox("clear");
             $("#jszc").combobox("clear");
         }
     }, "json");
@@ -87,11 +90,12 @@ function add() {
 }
 function showList() {
     $.post(path + "manage/tsrcxx/zyjsrc/ZyjsrcAction.jsp?mode=SHOWLIST&&ryid=" + ryid, '', function(data) {
+        seletedUser=data[0];
         $("#cszy").val(data[0].cszy);
         $("#gzgw").val(data[0].gzgw);
         $("#hjcq").val(data[0].hjcq);
-        $("#zclb").combobox("select", data[0].zclbbm);
-        $("#jszc").combobox("select", data[0].zcbm);
+        $("#zclb").combobox("setValue", data[0].zclbbm);
+        $("#jszc").combobox("setValue", data[0].zcbm);
         zyjsrcid = data[0].zyjsrcid;
         if (sfzjrc === "1") {
             $("#update").show();
@@ -102,7 +106,6 @@ function showList() {
             $("#update").hide();
             $("#dell").hide();
             $("#add").show();
-            console.info("=====");
         }
     }, "json");
 }

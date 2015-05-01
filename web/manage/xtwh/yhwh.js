@@ -1,4 +1,5 @@
 var comboxsData="";
+var selectedUser="";
 $(function(){
     dialogInit($('#yhwh_crud_dialog'),window.parent.tabHeight,window.parent.tabWidth);
     loadCombobox(['#prop_search','#level_search','#dept_search','#trade_search'],['#prop_crud','#level_crud','#dept_crud','#trade_crud']);
@@ -64,6 +65,9 @@ function loadGzdwCombobox(arg){
         data:query,
         success:function (data, status){
             $('#orgz_crud').combobox('clear').combobox('loadData',data[$('#orgz_crud').attr('i-list')]);
+            if(selectedUser!=""){
+                $('#orgz_crud').combobox('setValue',parseInt(selectedUser.orgzc));
+            }
         }
     });
 }
@@ -214,6 +218,7 @@ function detail(rowIndex){
  */
 function CRUD($dialog,doSetFromVal,rowData,doDisableForm,formRegisterAction){
     if(doSetFromVal){
+        selectedUser=rowData;
         setFromValue(rowData);
     }
     if(doDisableForm){
@@ -305,6 +310,7 @@ function enableFrom(){
     $('#utype_crud').find("input[type='radio']").removeAttr("disabled");
 }
 function clearForm(){
+    selectedUser="";
     clearSelect();
     clearInput();
 }

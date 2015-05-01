@@ -120,14 +120,14 @@
                             <input type="radio" name="ulevel" value="${pageScope.ucontants.SHI}" style="vertical-align: middle;"/><font style="vertical-align:middle;margin: 0 8px 0 3px;">${pageScope.ucontants.userLevelMap[pageScope.ucontants.SHI]}</font>
                         </label>
                         <label style="cursor: pointer"><input type="radio" name="ulevel" value="${pageScope.ucontants.QU}" style="vertical-align: middle"/><font style="vertical-align:middle;margin: 0 8px 0 3px">${pageScope.ucontants.userLevelMap[pageScope.ucontants.QU]}</font></label>
-                        <label style="cursor: pointer"><input type="radio" name="ulevel" value="${pageScope.ucontants.QIYE}" style="vertical-align: middle"/><font style="vertical-align:middle;margin: 0 8px 0 3px">${pageScope.ucontants.userLevelMap[pageScope.ucontants.QIYE]}</font></label>
+                        <label style="cursor: pointer"><input checked type="radio" name="ulevel" value="${pageScope.ucontants.QIYE}" style="vertical-align: middle"/><font style="vertical-align:middle;margin: 0 8px 0 3px">${pageScope.ucontants.userLevelMap[pageScope.ucontants.QIYE]}</font></label>
                     </span>
                 </div>
                 <div class="text-align-left">
                     <span style="text-align: right">用户类别：</span>
                     <span id="utype_crud">
                         <label style="cursor: pointer"><input type="radio" name="utype" value="${pageScope.ucontants.ADMIN}" style="vertical-align: middle"/><font style="vertical-align:middle;margin: 0 8px 0 3px">${pageScope.ucontants.userTypeMap[pageScope.ucontants.ADMIN]}</font></label>
-                        <label style="cursor: pointer"><input type="radio" name="utype" value="${pageScope.ucontants.PUTONG}" style="vertical-align: middle"/><font style="vertical-align:middle;margin: 0 8px 0 3px">${pageScope.ucontants.userTypeMap[pageScope.ucontants.PUTONG]}</font></label>
+                        <label style="cursor: pointer"><input checked type="radio" name="utype" value="${pageScope.ucontants.PUTONG}" style="vertical-align: middle"/><font style="vertical-align:middle;margin: 0 8px 0 3px">${pageScope.ucontants.userTypeMap[pageScope.ucontants.PUTONG]}</font></label>
                     </span>
                 </div>
             </form>

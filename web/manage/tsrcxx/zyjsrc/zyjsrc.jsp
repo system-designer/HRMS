@@ -40,28 +40,32 @@
     <body>
         <div id="xx" title=""  style="height:500px;width: 820px;" closable="false" draggable="false">
             <div style="font-size: 15px">
-                单位名称:&nbsp;<input class="headMsg" name="dwmc" style="width: 200px" id="dwmc" readonly="true"/>
-                &nbsp;姓&nbsp;&nbsp;名:&nbsp;<input class="headMsg"  name="xm" style="width: 138px" id="xm" readonly="true"/>&nbsp;&nbsp;
-                性&nbsp;别:&nbsp;<input class="headMsg"  name="xb" style="width: 80px" id="xb" readonly="true"/>
-                <br>
-                <br>
-                身份证(护照)号码:&nbsp;<input class="headMsg"  name="zjlb" style="width: 477px" id="zjhm" readonly="true"/>
-                <br>
-                <p style="text-align: center">专业技术人才</p>
-                从事专业<input type="text" name="cszy" style="width: 220px" id="cszy"/>
-                <span style="margin-left: 180px">工作岗位&nbsp;<input type="text" name="gzgw" style="width: 200px" id="gzgw"/></span>
-                <br>
-                <br>
-                职称类别<input class="easyui-combobox" type="text"  id="zclb"/>     
-                <span style="margin-left:250px">技术职称&nbsp;<input class="easyui-combobox" type="text"  id="jszc"/> </span> 
+                <table>
+                    <thead>
+                    <th width="20%"></th><th width="30%"></th><th width="20%"></th><th width="30%"></th>
+                    </thead>
+                    <tbody>
+                        <tr><td >单位名称:</td><td width="30%"><input class="headMsg" name="dwmc" style="width:300px"  id="dwmc" readonly="true"/></td>
+                            <td width="20%">姓名:</td><td width="30%"><input class="headMsg"  name="xm" id="xm" readonly="true"/></td>
+                        </tr>
+                        <tr><td>身份证(护照):</td><td><input class="headMsg"  name="zjlb"  id="zjhm" readonly="true"/></td>
+                            <td>性别:</td><td><input class="headMsg"  name="xb"  id="xb" readonly="true"/></td>
+                        <tr><td>从事专业:</td><td><input type="text" name="cszy"  id="cszy"/></td>
+                            <td>工作岗位:</td><td><span><input type="text" name="gzgw" id="gzgw"/></span></td>
+                        </tr>
+                        <tr><td>职称类别:</td><td><input class="easyui-combobox" name="zclbbm" type="text"  id="zclb"/></td>     
+                            <td>技术职称:</td><td><span><input class="easyui-combobox" name="zcbm" type="text"  id="jszc"/> </span></td>
+                        </tr>
+                    </tbody>
+                </table>
                 <p style="text-align: center">获得成果、奖励（含授予荣誉称号）情况</p>
                 <textarea style="width: 610px;height: 200px" name="hjcq" id="hjcq"></textarea>
                 <br>
                 <div id="button">
                     <center>
-                    <a class="easyui-linkbutton" onclick="add()" id="add">添加</a>
-                    <a class="easyui-linkbutton" onclick="add()" id="update">修改</a>
-                    <a class="easyui-linkbutton" onclick="del()" id="dell">删除</a>
+                        <a class="easyui-linkbutton" onclick="add()" id="add">添加</a>
+                        <a class="easyui-linkbutton" onclick="add()" id="update">修改</a>
+                        <a class="easyui-linkbutton" onclick="del()" id="dell">删除</a>
                     </center>
                 </div>
                 <div style="clear:both"></div>

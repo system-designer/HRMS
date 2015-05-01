@@ -2,6 +2,7 @@ package com.hrms.manage.xtwh;
 
 import com.hrms.manage.permission.UserContants;
 import com.hrms.manage.permission.UserPermission;
+import com.hrms.table.Yh;
 import com.hrms.util.MD5;
 import com.hrms.util.Util;
 import com.jplus.json.EasyUiJson;
@@ -12,6 +13,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -20,6 +22,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.jplus.hyb.database.Hyberbin;
 import org.jplus.hyb.servlet.ServletUtil;
 import org.jplus.yydbgai.DatabaseAccess;
 import org.jplus.yydbgai.EasyMapsManager;
@@ -302,6 +305,15 @@ public class YhwhAction extends HttpServlet {
 
             String gzdwidStr = request.getParameter("orgz-crud");
             String username = request.getParameter("uname-crud");
+            //判断用户名是否重复
+            Yh yh=new Yh();
+            yh.setUsername(username);
+            Hyberbin hyb=new Hyberbin(yh);
+            yh=hyb.showOnebyKey("username");
+            if(yh!=null&&yh.getUserid()>0){
+                hyb.close();
+                throw new IllegalArgumentException("用户名重复!!!");
+            }
             String jb = request.getParameter("utype");
             String lxdh = request.getParameter("phone-crud");
             String xm = request.getParameter("name-crud");

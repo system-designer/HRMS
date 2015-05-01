@@ -73,7 +73,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="margin-top: 10px;">
+            <div style="margin-top: 10px;margin-left: 10px;">
                 <form id="jlxx_form" method="post" class="easyui-form">
                     <input type="hidden" id="ryid" name="ryid"/>
                     <span style="margin-left: 250px;">学习简历（含参加培训情况）</span>
