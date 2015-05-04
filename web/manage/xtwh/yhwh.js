@@ -100,7 +100,7 @@ function loadYhwhList(options){
             checkbox: true
         },{
             field: 'orgz',
-            title: '用户名称',
+            title: '单位名称',
             width: 200
         },{
             field: 'name',

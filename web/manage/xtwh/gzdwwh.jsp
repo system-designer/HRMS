@@ -75,7 +75,7 @@
             </table>
         </div>
         <div id="gzdw_crud_dialog" title="添加单位信息" class="easyui-dialog" closed="true" style="width:425px;height:395px;text-align: left;padding: 10px;">
-            <form method="POST" id="form_crud">
+            <form method="POST" id="form_crud" class="easyui-form">
                 <div>
                     <span>单位性质：</span>
                     <span><input id="prop_crud" class="easyui-combobox width-1" name="prop-crud" i-list="propList" valueField="propc" textField="prop" editable="false"/></span>

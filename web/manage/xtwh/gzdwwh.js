@@ -328,6 +328,7 @@ function setFromValue(rowData){
     $('#level_crud').combobox('setValue',rowData.levelc);
     $('#dept_crud').combobox('setValue',rowData.deptc);
     $('#trade_crud').combobox('setValue',rowData.tradec);
+    $('#ssdq_crud').combobox('setValue',rowData.ssdqc);
     $('#name_crud').val(rowData.name);
     $('#addr_crud').val(rowData.addr);
     $('#phone_crud').val(rowData.phone);

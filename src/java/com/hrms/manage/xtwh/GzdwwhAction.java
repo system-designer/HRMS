@@ -62,10 +62,10 @@ public class GzdwwhAction extends HttpServlet {
                 loadCombobox(request, response);
                 break;
             case ADDGZDW:
-                GzdwCUD(request, response, "insert into gzdw(dwmc,dwxzbm,dwlbbm,ssxtbm,sshybm,dwdh,dwdz,hypy,lxr,dzyx,dwjj,username) values(?,?,?,?,?,?,?,?,?,?,?,?)", false, true, true, false, new UserPermission(request));
+                GzdwCUD(request, response, "insert into gzdw(dwmc,dwxzbm,dwlbbm,ssxtbm,sshybm,dwdh,dwdz,hypy,lxr,dzyx,dwjj,ssdqbm,username) values(?,?,?,?,?,?,?,?,?,?,?,?,?)", false, true, true, false, new UserPermission(request));
                 break;
             case UPDATEGZDW:
-                GzdwCUD(request, response, "update gzdw set dwmc=?,dwxzbm=?,dwlbbm=?,ssxtbm=?,sshybm=?,dwdh=?,dwdz=?,hypy=?,lxr=?,dzyx=?,dwjj=?,username=? where gzdwid=?", true, true, true, false, null);
+                GzdwCUD(request, response, "update gzdw set dwmc=?,dwxzbm=?,dwlbbm=?,ssxtbm=?,sshybm=?,dwdh=?,dwdz=?,hypy=?,lxr=?,dzyx=?,dwjj=?,ssdqbm=?,username=? where gzdwid=?", true, true, true, false, null);
                 break;
             case DELETEGZDW:
                 GzdwCUD(request, response, "delete from gzdw where gzdwid=?", true, false, false, false, null);
@@ -168,6 +168,7 @@ public class GzdwwhAction extends HttpServlet {
                     sql = Util.addField2InsertSql(sql, "sjdwid");
                     dao.setPreparedParameter(userPermission.getUser().getGzdwid());
                 }
+                System.out.println("sql:"+sql);
                 boolean bool = dao.executeUpdate(sql);
                 dao.close();
                 dao = null;

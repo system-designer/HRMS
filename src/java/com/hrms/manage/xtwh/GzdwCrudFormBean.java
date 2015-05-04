@@ -1,5 +1,6 @@
 package com.hrms.manage.xtwh;
 
+import com.hrms.manage.permission.UserPermission;
 import com.hrms.table.Yh;
 import com.hrms.util.CnToSpell;
 import com.hrms.util.Util;
@@ -23,6 +24,7 @@ public class GzdwCrudFormBean {
     public String lxr;//联系人
     public String dzyx;//电子邮箱
     public String dwjj;//单位简介
+    public String ssdqbm;//所属地区编码
     public JSONObject jsonObj = new JSONObject();
 
     public GzdwCrudFormBean() {
@@ -50,6 +52,8 @@ public class GzdwCrudFormBean {
         lxr = request.getParameter("contacts-crud");
         dzyx = request.getParameter("email-crud");
         dwjj = request.getParameter("introduction-crud");
+        UserPermission user=new UserPermission(request);
+        ssdqbm=user.getSSdqbm();
     }
 
     public boolean validate(boolean b) {
@@ -67,10 +71,12 @@ public class GzdwCrudFormBean {
                     jsonObj.put("addr_notice", "单位地址不能为空!!!");
                     return false;
                 }
+                /*
                 if (!Util.isMobileNO(dwdh)) {
                     jsonObj.put("phone_notice", "号码格式不正确!!!");
                     return false;
                 }
+                 */
             } catch (JSONException e) {
                 throw new RuntimeException();
             }
@@ -99,6 +105,7 @@ public class GzdwCrudFormBean {
         dao.setPreparedParameter(lxr);
         dao.setPreparedParameter(dzyx);
         dao.setPreparedParameter(dwjj);
+        dao.setPreparedParameter(ssdqbm);
         dao.setPreparedParameter(username);
     }
     /*
