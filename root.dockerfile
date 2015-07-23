@@ -24,6 +24,9 @@ RUN update-alternatives --display java
 RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle">> /etc/environment
 RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle">> /etc/default/tomcat7
 
+# Add hrms stuff into tomcat server
+COPY . /usr/share/tomcat7/webapp
+
 # 容器需要开放SSH 22端口
 EXPOSE 22
 
