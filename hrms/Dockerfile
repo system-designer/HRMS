@@ -23,8 +23,8 @@ RUN wget -q https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION
 # Add hrms stuff into tomcat server
 COPY . /tomcat/webapps/hrms	
 	
-ADD create_tomcat_admin_user.sh /
-ADD run.sh /
+ADD create_tomcat_admin_user.sh /create_tomcat_admin_user.sh
+ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
 EXPOSE 8080
