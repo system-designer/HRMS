@@ -78,6 +78,7 @@ public class DatabaseINI {
         Connection conn = null;
         try {
             Class.forName(driver);
+            LoggerManage.logger.debug("database params:url:"+url+",username:"+username+",password:"+password);
             conn = DriverManager.getConnection(url, username, password);
         } catch (Exception ex) {
             LoggerManage.logger.getLogger("DatabaseINI数据库连接错误\t", ex);
