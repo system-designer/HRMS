@@ -1,37 +1,31 @@
 # VERSION 0.0.1
-# 默认ubuntu server长期支持版本，当前是12.04
-FROM ubuntu
+# 默认java长期支持版本
+FROM tifayuki/java:7
 # 签名啦
 MAINTAINER raylew "aishangzoulu@gmail.com"
 
-# 更新源，安装ssh server
-RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list
-RUN apt-get update
-RUN apt-get install -y openssh-server
-RUN mkdir -p /var/run/sshd
+RUN apt-get update && \
+    apt-get install -yq --no-install-recommends wget pwgen ca-certificates && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# 设置raylew ssh远程登录密码为935478
-RUN echo "raylew:935478" | chpasswd 
+ENV TOMCAT_MAJOR_VERSION 7
+ENV TOMCAT_MINOR_VERSION 7.0.55
+ENV CATALINA_HOME /tomcat
 
-# 添加orache java7源，一次性安装vim，wget，curl，java7，tomcat7等必备软件
-RUN apt-get install python-software-properties
-RUN add-apt-repository ppa:webupd8team/java
-RUN apt-get update
-RUN apt-get install -y vim wget curl oracle-java7-installer tomcat7
-
-# 设置JAVA_HOME环境变量
-RUN update-alternatives --display java
-RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle">> /etc/environment
-RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-oracle">> /etc/default/tomcat7
+# INSTALL TOMCAT
+RUN wget -q https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz && \
+    wget -qO- https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz.md5 | md5sum -c - && \
+    tar zxf apache-tomcat-*.tar.gz && \
+    rm apache-tomcat-*.tar.gz && \
+    mv apache-tomcat* tomcat
 
 # Add hrms stuff into tomcat server
-COPY . /etc/default/tomcat7/tomcat7/webapps/hrms
+COPY . tomcat/webapps/hrms	
+	
+ADD create_tomcat_admin_user.sh /create_tomcat_admin_user.sh
+ADD run.sh /run.sh
+RUN chmod +x /*.sh
 
-# 容器需要开放SSH 22端口
-EXPOSE 22
-
-# 容器需要开放Tomcat 8080端口
 EXPOSE 8080
-
-# 设置Tomcat7初始化运行，SSH终端服务器作为后台运行
-ENTRYPOINT service tomcat7 start && /usr/sbin/sshd -D
+CMD ["/run.sh"]
