@@ -1,0 +1,130 @@
+/* 
+    Document   : blog_personinfo
+    Created on : 2014-3-17, 21:02:11
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+.blog_personinfo_main{
+    width:991px;
+    height:auto;;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    border:1px solid #cccccc;
+}
+.blog_personinfo_left{
+    float:left;
+    width:200px;height:800px;
+
+    border-right:none;
+    background: #e8f0f7;
+    /*margin-bottom: 10px;*/
+
+}
+.blog_personinfo_span1{
+    display:block;
+    height:50px;
+    font-size:25px;
+    border-bottom: 1px dashed #cccccc;
+    line-height:50px;
+}
+.blog_personinfo_ul1{
+    /*text-align: left;*/
+
+    list-style: none;
+}.blog_personinfo_ul1 li{
+    cursor: pointer;
+    /*border:1px solid red;*/
+    height:40px;line-height:40px;
+    border-bottom: 1px dashed #cccccc;
+}
+.blog_personinfo_right{
+    /*    padding-left: 10px;*/
+    /*margin-left: 10px;*/  float:left;width:780px;
+
+    text-align: left;
+
+}
+.blog_personinfo_right_top{
+    margin-top: 30px;
+    border-bottom:1px solid #cccccc;;
+}
+.blog_personinfo_right_span1{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    background: white;
+    margin-top: 2px;
+    margin-left: 10px;
+    width:100px;
+    padding-bottom: 2px;
+    border:1px solid #cccccc;
+    border-bottom:none;;
+}
+.blog_personinfo_right_table{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.blog_personinfo_right_table tr{
+    height:45px;
+    line-height:45px;
+}
+.blog_personinfo_right_table_td1{
+    width:150px;
+}
+.blog_personinfo_right_table_td2{
+    width:500px;
+}
+.blog_personinfo_right_table_td3{
+    width:100px;
+}
+.blog_personinfo_right_table_select{
+    /*text-align: center;*/
+    height:25px;
+    line-height: 25px;
+    color:#999;
+}
+.blog_personinfo_right_table_select option{
+    /*color:#cccccc;*/
+}
+.blog_personinfo_right_table_span{
+    font-size:18px;
+    color:white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor:pointer;
+    background: url('../../image/nav.jpg') repeat-x;
+    border-radius:8px;;
+}
+.blog_personinfo_right_center{
+
+    margin-top: 20px;
+    padding-left: 10px;
+    /*border:1px solid red;*/
+}
+.blog_personinfo_right_center_span1{
+    padding-left: 10px;
+    color: #999;
+    font-size:13px;
+}
+.blog_personinfo_right_table1{
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+.blog_personinfo_right_table1 tr{
+    height:35px;line-height:35px;
+}

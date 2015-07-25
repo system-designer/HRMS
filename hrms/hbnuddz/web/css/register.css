@@ -1,0 +1,86 @@
+/* 
+    Document   : exit
+    Created on : 2013-3-17, 10:13:06
+    Author     : ASUS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+body{
+    text-align: center;
+}
+.all{
+    width:800px; 
+    margin:0 auto;
+}
+.denglu{
+    text-align: left;
+    margin-top: 50px;
+
+}
+.denglu a{
+   text-decoration: none;
+   float: right;
+   font-size:18px;
+   color:red;
+}
+.main{
+    width:800px;
+    height:540px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:1px solid   #AAAAAA;
+
+    background: url("../image/zc1.jpg") no-repeat;
+}
+.zc{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+    width:800px;
+    border-bottom:2px solid   #AAAAAA;
+    padding-bottom: 8px;
+}
+.zc1{
+    /*text-align: left;*/
+    margin-top: 20px;
+
+}
+.zc1 table{
+    /*text-align: right;*/
+/*line-height: 20px;*/
+    /*border:1px solid red;*/
+    margin-left:20px;
+}
+.zc1 table tr {
+    
+    font-size:20px;
+    height:40px;
+    line-height: 40px;
+    padding-bottom:  6px;
+}
+.zc1 table tr td{
+    text-align: left;
+ 
+
+}
+.zc2{
+    float:left;
+    margin-top: 20px;
+    margin-left: 300px;
+    /*padding-bottom: 5px;*/
+    width:100px;
+    height:30px;
+    font-size: 25px;
+    color:white;
+    background:  #FF8D40;
+    border:1px solid #FF5F0F;
+    border-radius: 10px;
+}

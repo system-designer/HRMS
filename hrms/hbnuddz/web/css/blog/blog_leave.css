@@ -1,0 +1,136 @@
+/* 
+    Document   : blog_leave
+    Created on : 2014-3-10, 20:49:50
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.blog_leave_main{
+         width:991px;
+    height:auto;;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    /*border:1px solid red;*/
+}
+.blog_leave_left{
+       width:726px;
+       text-align: left;
+    margin-right: 20px;
+    height:auto; 
+    float:left;
+     border:1px solid #cccccc;
+     padding-bottom: 10px;
+}
+.blog_leave_left p{
+     height:30px;
+    line-height:30px;
+    text-align: left;
+    padding-left: 10px;
+    background: #f1f6f7;
+    border-bottom: 1px solid #cccccc;
+}
+.blog_leave_lyxx{
+    width:700px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #cccccc;
+}
+.blog_leave_textarea{
+    width:690px;
+    height:150px;
+    border:1px solid #cccccc;
+}
+.blog_leave_button{
+    padding-top: 4px;
+    padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+    border:1px solid #cccccc;
+}
+.blog_leave_message{
+    margin-left: 10px;
+}
+.blog_leave_ul1{
+    margin-left: 20px;
+    list-style: none;
+    margin-top:10px;
+}
+.blog_leave_ul1 li{
+    height:auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #cccccc;
+}
+.blog_leave_ul1_left{
+    float:left;
+}
+.blog_leave_ul1_right{
+    margin-left: 10px;
+    width:630px;
+        float:left;
+        /*border:1px solid red;*/
+}
+
+.blog_leave_ul1_right_left{
+    float:left;
+}
+.blog_leave_ul1_right_right{
+    float:right;
+    /*border:1px solid red;*/
+}
+.blog_leave_span_right a{
+    color:#cccccc;
+}
+.blog_leave_ul1_nr{
+    margin-top: 7px;
+}
+
+.blog_leave_right{
+    width:240px;
+    float:left;
+}
+/*以下为翻页用到的样式*/
+.blog_log_fy{
+    height: 33px;
+    line-height: 33px;
+    float: right;
+    line-height: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.blog_log_fy input{
+    line-height: 33px;
+}
+
+.fy_ys{
+    background:#e5edf2;
+    margin-left: 3px;
+    padding:3px 5px;
+    border:1px solid #c2d5e3;
+}
+.blog_log_fy span a{
+    color:black;
+    text-decoration: none;
+}
+.fy_ys:hover{
+    cursor: pointer;
+    border: 1px solid  #B3DFDA;
+    color: #fff;
+
+}
+
+
+

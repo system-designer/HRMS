@@ -1,0 +1,103 @@
+/* 
+    Document   : lywm
+    Created on : 2013-3-6, 19:22:20
+    Author     : Ariel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+
+body{
+    text-align: center;
+}
+
+.main{
+    width:991px;
+    margin: 0 auto;
+
+}
+/*位置*/
+.wz{
+    padding-top: 10px;
+    text-align: left;
+    width:991px;
+    height:30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size:18px;
+}
+.wz span{
+    text-align: center;
+    padding-right: 59px;
+
+    padding-left: 20px;
+    font-weight: bold;
+
+    padding-bottom: 8px;
+    background:url("../image/wz.jpg") no-repeat;
+}
+.wz a{
+    text-decoration: none;
+    color:black;
+}
+.ts{
+
+    width:991px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    padding-bottom: 4px;
+    border-bottom:1px solid #B3DFDA;
+}
+.lt{
+    margin-top: 8px;
+    width: 991px;
+    height:auto;
+
+}
+.ul1{
+    margin-top: 10px;
+    width: 991px;
+    height:auto;
+    list-style: none;
+    text-align: center;
+}
+.ul1 li{
+    padding-top: 15px;
+    height:100px;
+    cursor:pointer;
+    border-bottom:1px solid #999;
+
+}
+.ul1 li img{
+    margin-right:12px;
+    float:left;
+}
+.ul1 li div{
+    float:left;
+}
+.ul1 li a{
+    cursor:pointer;
+    text-decoration: none;
+    color:black;
+}
+.ul1 li a:hover{
+    text-decoration: underline;
+    color:red;
+}
+
+.div1{
+    width:190px;
+    text-align: left;
+
+}
+.div2{
+    text-align: left;
+    width:230px;
+    margin-right: 10px;
+}

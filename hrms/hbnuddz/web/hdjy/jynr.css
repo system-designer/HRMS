@@ -1,0 +1,65 @@
+
+/* 
+    Document   : jynr
+    Created on : 2013-2-18, 17:29:33
+    Author     : evance
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/*内容*/
+.nr{
+    width: 668px;
+    border:1px solid #cccccc;
+    padding-bottom: 10px;
+}
+.nr1 ul{
+    list-style: none; 
+    margin-left: 10px;
+}
+.nr1 ul li{
+    text-align: center;
+    margin-top: 20px;
+    margin-right:17px;
+    float:left;
+    width: 200px;
+    height:200px;
+    border:1px solid #ccc;
+}
+.nr1 li a{ 
+    margin-top: 15px;
+    width: 200px;
+    height:185px; 
+    display:block;
+    float:left; 
+    text-align:center; 
+    font-size:13px;
+    color:black;
+    text-decoration: none;
+}
+.nr1 li img {
+    border: none;
+    height:140px;
+    width:125px;
+}
+.nr1 li em{
+    font-style: normal; 
+    height:20px; 
+    line-height:20px; 
+    display:block;
+}
+/*以下为翻页用到的样式*/
+.jy_fy{
+    width: 668px;
+    height:30px;
+    float:right;
+}
+
+#jyImgDiv{
+    position:absolute;
+    display: none;
+    z-index:1006;
+}
+#closeICON{
+    text-align:right;
+    z-index: 1007;
+}

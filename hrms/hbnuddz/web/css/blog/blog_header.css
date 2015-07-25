@@ -1,0 +1,48 @@
+/* 
+    Document   : blog_header
+    Created on : 2014-3-10, 19:07:47
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+*{
+    padding:0px;
+    margin: 0px;
+}
+img{
+    border:none;
+}
+
+
+.header1{ 
+    width:991px;
+    height:150px;
+    border:1px solid red;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+}
+.message{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.nav{
+    margin-top: 60px;
+    text-align: left;
+}
+.nav ul{
+    margin-left: 20px;
+    list-style: none;
+}
+.nav ul li{
+    float:left;
+    width:80px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+

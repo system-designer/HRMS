@@ -1,0 +1,140 @@
+/* 
+    Document   : gywm
+    Created on : 2013-1-21, 16:03:46
+    Author     : ASUS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+
+.main{
+    /*border:1px solid red;*/
+    width:991px;
+    margin: 0 auto;
+}
+
+.wz{
+    padding-top: 10px;
+    text-align: left;
+    width:991px;
+    height:30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size:18px;
+}
+.wz span{
+    text-align: center;
+    padding-right: 59px;
+
+    padding-left: 20px;
+    font-weight: bold;
+
+    padding-bottom: 8px;
+    background:url("../image/wz.jpg") no-repeat;
+}
+.wz a{
+    text-decoration: none;
+    color:black;
+}
+
+.left{
+    width: 300px;
+    float:left;
+}
+/*社团概况*/
+.stgk{
+    margin-top: 10px;
+    width: 292px;
+    height: 223px;
+   background: #739fea;
+    padding-left: 8px;
+    border-radius: 5px;
+    border:1px solid #cccccc;
+}
+.stgk p{
+    padding-top: 2px;
+    font-size:20px;
+    font-weight: bold;
+    height:30px;
+}
+
+.stgk ul{
+    list-style: none;
+    width:200px;
+
+    margin-left: 40px;
+}
+.stgk ul li{
+    margin-top: 14px;
+    text-align: center;
+    font-size:20px;
+    border-radius: 5px;
+    background:yellowgreen;
+    border:1px solid white;
+}
+.stgk ul li:hover{
+    cursor: pointer;
+    background: #999; 
+}
+.stgk ul li.one{
+    color:red;
+    background: #999;
+}
+/*右*/
+.right{
+    margin-left: 26px;
+    width:660px;
+    height:auto;
+    float:left;
+}
+.nr{
+    display:none;
+    line-height: 25px;
+    width:660px;
+    height:auto;
+    margin-top: 10px;
+    font-size:16px;
+    border:1px solid #cccccc;
+}
+
+.nr1{
+    width: 660px;
+    height:auto;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.nr1 p{
+    clear:both;
+}
+.nr1 ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+.nr1 ul li span{
+    margin-left: 7px;
+}
+.xcby{
+    margin-top: 15px;
+    float:left;
+    width: 990px;
+    height: 200px;
+    border:1px solid #cccccc;
+}
+#xhcy thead{
+    height:50px;
+    border:1px solid red;
+}
+#xhcy tr{
+    height:40px;
+}
+#xhcy tr td{
+
+    text-align: center;
+    border:1px solid #cccccc;
+}

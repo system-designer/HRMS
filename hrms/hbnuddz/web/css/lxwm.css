@@ -1,0 +1,46 @@
+/* 
+    Document   : lxwm
+    Created on : 2013-2-2, 18:17:54
+    Author     : ASUS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+.lxwm{
+      float:left;
+    margin-top: 10px;
+    width: 300px;
+    height: 210px;
+    border:1px solid #cccccc;
+}
+.lxwm p{
+       padding-top: 4px;
+    font-size:17px;
+    text-align: center;
+   
+    height:30px;
+    background-color:  #739fea;
+    border-bottom:1px solid #cccccc; 
+}
+.lxwm ul{
+    margin-top: 15px;
+    margin-left: 8px;
+    list-style: none;
+}
+.lxwm ul li{
+    font-size:17px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-bottom:1px dashed #cccccc;
+}
+.lxwm ul li a{
+    color:black;
+    text-decoration: none;
+}
+

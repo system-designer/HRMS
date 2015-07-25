@@ -1,0 +1,93 @@
+/* 
+    Document   : blog_post
+    Created on : 2014-3-17, 20:16:13
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:none;
+}
+.blog_post_main{
+        width:991px;
+    height:auto;;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.blog_post_left{
+    text-align: left;
+    width:700px;
+    margin-right: 20px;
+    height:auto; 
+    float:left;
+    /*border:1px solid #cccccc;*/
+    border:1px solid red;
+}
+.blog_post_left_p{
+    height:30px;
+    line-height:30px;
+    text-align: left;
+    padding-left: 10px;
+    background: #f1f6f7;
+    border-bottom: 1px solid #cccccc;
+}
+.blog_post_left_p_left{
+  float:left;
+}
+.blog_post_left_p_right{
+    float:right;
+    margin-right: 8px;
+}
+.blog_post_ul1{
+    margin-left: 20px;
+    /*border:1px solid red;*/
+    margin-right: 17px;
+    margin-top: 10px;
+    list-style: none;
+
+}.blog_post_zhuti{
+    height:30px;
+    line-height:30px;
+    float:left;
+    width:250px;
+}
+.blog_post_mokuai{
+    height:30px;
+    line-height:30px;
+    float:left; width:150px;      
+}
+.blog_post_huifu{ 
+    height:30px;
+    line-height:30px;
+    float:left;
+    width:150px;
+}
+.blog_post_fatie{
+    height:30px;
+    line-height:30px;
+    float:left;
+    width:100px;
+}
+
+.blog_post_ul1 li{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.blog_post_right{
+    width:240px;
+    padding-bottom: 10px;
+    float:left;
+}

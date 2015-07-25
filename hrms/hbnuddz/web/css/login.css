@@ -1,0 +1,74 @@
+/* 
+    Document   : login
+    Created on : 2013-3-16, 16:27:59
+    Author     : ASUS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+body{
+    text-align: center;
+}
+
+.all{
+    width:750px;
+    margin:0 auto;
+}
+.denglu{
+    text-align: left;;
+    /*float: left;*/
+    margin-top: 50px;
+
+}
+.main{
+    width:740px;
+    height:480px;
+    border:1px solid #999;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #E1F0F2; 
+}
+.left{
+    padding-top: 20px;
+    width:350px;
+    height:480px;
+    float:left;
+    /*border:1px solid red;*/
+}
+.right{
+    width:380px;
+    height:480px;
+    float:left;
+    border-left:1px solid #999;;
+}
+.hy{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size:30px;
+    margin-bottom: 60px;
+}
+.right ul{
+    text-align: left;
+    margin-left: 30px;
+    list-style: none;
+}
+.right ul li{
+    margin-top: 30px;
+}
+.tj{
+    margin-top: 20px;
+    /*margin-left: 30px;*/
+    width:100px;
+    height:40px;
+    border:1px solid red;
+    background: #FF5F0F;
+    border-radius: 10px;
+    font-size:20px;
+    color:white;
+}

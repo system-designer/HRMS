@@ -1,0 +1,184 @@
+/* 
+    Document   : index
+    Created on : 2013-1-20, 16:22:27
+    Author     : ASUS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+.main{
+    /*       text-align: center;*/
+    width:991px;
+    height:auto;
+    margin: 0 auto;
+
+}
+/*左*/
+.left{
+    margin-top: 8px;
+    width: 300px;
+    height:auto;
+    float:left;
+}
+
+/*精彩瞬间*/
+.jcsj{
+    width:300px;
+    height:277px;
+    border:1px solid #cccccc;
+    float:left;
+}
+/*环保漫画*/
+.hbmh{
+    float:left;
+    margin-top: 10px;
+    width: 300px;
+    height: 260px;
+    border:1px solid #cccccc;
+}
+/*中间*/
+.cen{
+    margin-left: 10px;
+    margin-top: 8px;
+    float:left;
+    width: 420px;
+    height:auto;
+
+
+}
+/*社团公告   社团活动 环保新闻*/
+.cen1,.cen2,.cen3{
+    margin-bottom: 7px;
+    width: 420px;
+    height:250px;
+    border:1px solid #cccccc;
+}
+.jcsj p,.cen1 p,.cen2 p,.cen3 p,.hbcy p,.lyczrj p,.hbzn p,.hbdr p,.hdyj p,.hbmh p,.left p{
+    padding-top: 4px;
+    font-size:17px;
+    text-align: center;
+    height:30px;
+    line-height: 30px;
+    background-color: #f3f3f3;
+    border-bottom:1px solid #cccccc; 
+}
+
+.cen1 p a,.cen2 p a ,.cen3 p a,.hdyj p a{
+    margin-right: 5px;
+    float:right;
+}
+.cen1 table,.cen2 table ,.cen3 table {
+    margin-top: 10px;
+    cursor:pointer;
+}
+.cen1 table tr,.cen2 table tr,.cen3 table tr{
+    height:30px;
+    padding-bottom: 5px;
+}
+.cen1 table tr td,.cen2 table tr td,.cen3 table tr td{
+    border-bottom:1px dashed #cccccc;
+}
+.cen1 table tr td a,.cen2 table tr td a,.cen3 table tr td a{
+    text-decoration: none;
+    color:black;
+}
+.cen1 table tr td a:hover,.cen2 table tr td a:hover,.cen3 table tr td a:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+
+/*右*/
+.right{
+    margin-left: 10px;
+    margin-top: 8px;
+    float:left;
+    width: 247px;
+    height:auto;
+
+}
+/*绿源成长日记*/
+.lyczrj{
+    width: 247px;
+    height:300px;
+    border:1px solid #cccccc;
+    margin-bottom: 13px;
+}
+
+.rj{
+    width: 247px;
+    height: 300px;
+    margin-top: 10px;
+    font-size:16px;
+    line-height: 24px;
+
+}
+.rj span{
+    font-size: 17px;
+}
+/*环保创意  环保指南  环保达人*/
+.hbcy,.hbzn{
+    width: 247px;
+    height:225px;
+    border:1px solid #cccccc;
+}
+
+
+/*环保剪辑*/
+.hdyj{
+    margin-top: 3px;
+    float:left;
+    border:1px solid #cccccc;
+    width: 991px;
+    height:210px;
+    margin-bottom: 8px;
+}
+
+.marquee {
+    margin-top: 5px;
+    border-top:1px solid #cccccc;
+
+    width:991px;
+    height:165px;
+    overflow:hidden;
+}
+
+.marquee li{
+
+    display:inline; 
+    float:left;
+    margin-top:3px;
+}
+
+.marquee li a{ 
+    width:150px; 
+    height:260px; 
+    display:block;
+    float:left; 
+    text-align:center; 
+    font-size:13px;
+    color:black;
+    text-decoration: none;
+}
+
+.marquee li img {
+    border: none;
+    height:140px;
+    width:125px;
+
+}
+.marquee li em{
+    font-style: normal; 
+    height:20px; 
+    line-height:20px; 
+    display:block;
+}
+
+
+

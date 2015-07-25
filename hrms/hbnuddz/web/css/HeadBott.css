@@ -1,0 +1,121 @@
+/* 
+    Document   : HeadBott
+    Created on : 2013-1-20, 11:33:30
+    Author     : ASUS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+.dl{ 
+    padding-top: 10px;
+    width: 991px;
+    height:30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+.dl a{
+    margin-left: 8px;
+    font-size: 18px;
+    color: #999;
+    text-decoration: none;
+}
+#prelogin{float:right;}
+.pipe{margin:0px 5px;color:#AAA;}
+#afterlogin{float:right;}
+.all{
+
+    text-align:center;
+    width:991px ;
+    height:237px;
+    margin: 0 auto;
+
+}
+
+.header{
+    height:207px;
+
+    background: url('../image/header.gif') no-repeat;
+    /*border:1px solid yellow;*/
+    border-bottom-left-radius: 6px;
+       border-bottom-right-radius: 6px;
+}
+
+.dh{
+    width: 990px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    /*border:1px solid red;*/
+
+}
+.dh ul{
+    /*margin-left: 4px;*/
+    list-style: none;
+  
+    
+}
+
+.dh ul li{
+
+    width: 122px;
+    margin-right: 2px;
+
+    height: 30px;
+    line-height:30px;
+    float:left;
+    background:url('../image/nav.jpg');
+    text-align: center;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius:6px;
+}
+.dh ul li a{
+    font-size: 20px;
+    color:white;
+    /*font-weight: bolder;*/
+    text-decoration: none;
+    /*border:1px solid red;*/
+}
+.dh ul li a:hover{
+    color:red;
+    text-decoration: underline;
+}
+.dh ul li a:active{
+    color:blue;
+}
+.dh ul li a:visited{
+
+}
+.bott{
+    color:white;
+    font-size:14px;
+    float:left;
+    width:100%;
+    border-radius: 5px;
+    height:130px;
+    line-height:25px;
+    letter-spacing: 1px;
+    background:url('../image/bot.jpg') repeat-x;
+    margin-bottom: 5px;
+}
+
+
+.wz1{
+    margin-top: 15px;
+}
+.wz1 span a{
+    text-decoration: none;
+    color:white;
+}
+.wz1 span a:hover{
+    color:red;
+    text-decoration: underline;
+}
+
+
+

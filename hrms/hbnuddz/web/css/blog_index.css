@@ -1,0 +1,325 @@
+/* 
+    Document   : personal
+    Created on : 2014-3-3, 20:44:31
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+*{
+    padding:0px;
+    margin: 0px;
+}
+img{
+    border:none;
+}
+
+.header2{
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:30px;
+    background:  #ededed;
+    border-top:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+}
+.header2_left{
+    float:left;
+    margin-left: 10px;
+    line-height: 30px;
+}
+.header2_right{
+    float:right;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.header1{ 
+    width:991px;
+    height:150px;
+    border:1px solid red;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+.message{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.nav{
+    margin-top: 60px;
+    text-align: left;
+}
+.nav ul{
+    margin-left: 20px;
+    list-style: none;
+}
+.nav ul li{
+    float:left;
+    width:80px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:black;
+}
+.middle{
+    width:991px;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center; 
+    margin-bottom: 10px;
+}
+.middle .left{
+    width:250px;
+    height:auto;
+    float:left;
+    /*border:1px solid red;*/
+}
+.picture{
+    width:240px;
+    height:320px;
+    border:1px solid #cccccc;
+}
+.picture p{
+    height:30px;
+    line-height:30px;
+    text-align: left;
+    padding-left: 10px;
+    background: #f1f6f7;
+    border-bottom: 1px solid #cccccc;
+}
+.picture img{
+    margin-top: 5px;
+}
+.picture .information{
+    height:75px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px dotted #999;
+}
+.picture .information ul,.middle .left .statistic .information ul {
+    /*height:50px;*/
+    margin-top: 20px;
+    list-style: none;
+
+
+}
+.picture .information ul li,.middle .left .statistic .information ul li{
+    width:90px;
+    height:25px;
+    float:left;
+}
+.picture .information ul li a{
+    text-decoration: none;
+    color: #09c;
+}
+.picture .management{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: #09c;
+}
+.middle .left .statistic{
+    margin-top: 20px;
+    width:240px;
+    height:230px;
+    border:1px solid #cccccc; 
+}
+.middle .left .statistic p, .middle .left .photo p,.middle .left .history p{
+    height:30px;
+    line-height:30px;
+    text-align: left;
+    padding-left: 10px;
+    background: #f1f6f7;
+    border-bottom: 1px solid #cccccc;
+}
+.middle .left .statistic .guest{
+    text-align:left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.middle .left .statistic .guest .num{
+    color:red;
+}
+.middle .left .statistic .information ul li span{
+    color: #09c;
+}
+.middle .left .photo,.middle .left .history{
+    margin-top: 20px;
+    width:240px;
+    height:120px;
+    border:1px solid #cccccc; 
+}
+.middle .left .photo div,.middle .left .history div{
+    margin-top: 20px;
+}
+.middle .center{
+
+    width:440px;
+    height:auto;
+    margin-left: 23px;
+    float:left;
+    /*border:1px solid red;*/
+}
+.middle .center .data{
+    width:440px;
+    height:auto;
+    border:1px solid #cccccc; 
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+.middle .center .data p{
+    height:30px;
+    line-height:30px;
+    text-align: left;
+    padding-left: 10px;
+    background: #f1f6f7;
+    border-bottom: 1px solid #cccccc;
+} 
+.middle .center .data .span1{
+    /*display:block;*/
+    /*text-align: right;*/
+    margin-left: 330px;
+    /*border:1px solid red;*/
+}
+
+.middle .center .data .xinxi{
+    height:60px;
+    border-bottom: 1px dotted #cccccc;
+    margin-bottom: 10px;
+}
+.middle .center .data .clearIn{
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.middle .center .data .clearIn a{
+    text-decoration: none;
+    color: #09c;
+}
+.middle .center .data .xinxi ul{
+    margin-top: 10px;
+    margin-left: 20px;
+
+    text-align: left;
+    list-style: none;
+}
+.middle .center .data .xinxi ul li{
+    margin-bottom: 10px;
+}
+.middle .center .data .data1{
+    margin-left: 20px;
+    text-align: left;
+    height:auto;
+    margin-top: 20px;
+}
+.middle .center .data .board{
+    margin-top: 5px;
+    border-bottom: 1px dotted #cccccc;
+}
+.middle .center .data .board .textarea1{
+    margin-left: 5px;
+    border:1px solid  #cccccc;
+    width:430px;
+    height:90px;
+}
+.middle .center .data .board .textarea1 div{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size:15px;
+}
+.middle .center .data .board .textarea1 div span{
+    color: #09c;
+}
+.blog_leave_textarea{
+   resize:none;
+    width:430px;
+    height:150px;
+    border:1px solid #cccccc;
+}
+.middle .center .data .board .liuyan{
+
+    display:block;
+    margin-top: 5px;
+    width:35px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 5px;
+    background: #f1f6f7;
+    border: 1px solid #cccccc;
+}
+.middle .center .data .tishi{
+    list-style: none;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.middle .center .data .tishi li{
+    border-bottom:1px dashed #cccccc;
+    padding-bottom: 10px;
+    margin-top: 8px;
+}
+.blog_index_ul1_left{
+    float:left;
+}
+.blog_index_ul1_right{
+    margin-left: 8px;
+    float:left;
+    width:350px;
+    /*border:1px solid red;*/
+}
+
+.middle .right{
+    width:250px;
+    height:auto;
+    float:left;
+    margin-left: 22px;
+    /*border:1px solid red;*/
+}
+.middle .right .friend{
+    height:auto;
+    margin-bottom: 20px; 
+    border:1px solid #cccccc;
+}
+.middle .right .friend p{
+    height:30px;
+    line-height:30px;
+    text-align: left;
+    padding-left: 10px;
+    background: #f1f6f7;
+    border-bottom: 1px solid #cccccc;
+}
+.middle .right .friend .tupian{
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.middle .right .friend .tupian ul{
+    list-style: none;
+}
+.middle .right .friend .tupian ul li{
+    margin-right: 29px;
+    float:left;
+    width:50px;
+    height:auto;
+    margin-bottom: 20px;
+}
+.middle .right .friend .tupian ul li a{
+    text-decoration: none;
+    color: #09c;
+}
+.middle .right .friend .tupian ul li span{
+    color:#cccccc;
+}
+.middle .right .friend .qunzu{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    /*color:#cccccc;*/
+}

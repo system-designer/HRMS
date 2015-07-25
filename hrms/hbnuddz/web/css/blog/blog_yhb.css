@@ -1,0 +1,101 @@
+/* 
+    Document   : blog_yhb
+    Created on : 2014-3-10, 19:11:34
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.blog_yhb_main{
+      width:991px;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.blog_yhb_left{
+    width:726px;
+    margin-right: 20px;
+    height:auto; 
+    float:left;
+     border:1px solid #cccccc;
+}
+.blog_yhb_xx{
+       margin-left: 20px;
+       width:700px;
+     
+}
+.blog_yhb_left p{
+     height:30px;
+    line-height:30px;
+    text-align: left;
+    padding-left: 10px;
+    background: #f1f6f7;
+    border-bottom: 1px solid #cccccc;
+}
+.blog_yhb_table1{
+    margin-top: 20px;
+   }
+.blog_yhb_table1 tr td,.blog_yhb_table2 tr td{
+    text-align: left;
+   width:350px;
+    height:30px; line-height: 30px;
+    
+}
+.blog_yhb_ul1{
+    text-align: left;
+    font-size:15px;
+     width:700px;
+   list-style: none;
+     margin-top: 10px;
+}
+.blog_yhb_ul1 li{
+    height:30px;
+   margin-bottom: 6px;
+   padding-bottom: 6px;
+    border-bottom: 1px dashed #cccccc;
+}
+.blog_yhb_ul1 li a{
+    text-decoration: none;
+    
+}
+.blog_yhb_span1{
+    margin-right: 6px;
+    color: #888;
+}
+.blog_yhb_glbk{
+    margin-top: 10px;
+    text-align: left;
+     margin-left: 20px;
+     padding-bottom: 8px;
+      width:700px;
+      border-bottom: 1px dashed #cccccc;
+}
+.blog_yhb_glbk ul{
+    list-style: none;
+}
+.blog_yhb_glbk ul li{
+    height:30px;
+    line-height:30px;
+   
+}
+.blog_yhb_glbk ul li a{
+    text-decoration: none;
+}
+.blog_yhb_hy{
+    margin-left: 20px;
+    padding-bottom: 5px;border-bottom: 1px dashed #cccccc;
+}
+.blog_yhb_tj{
+     margin-left: 20px;
+    padding-bottom: 10px;
+}
+.blog_yhb_right{
+     width:240px;
+    float:left;
+}

@@ -1,0 +1,48 @@
+/*
+    Document   : main
+    Created on : 2012-4-11, 16:00:52
+    Author     : 张浩春
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.titleCenter{
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+ul li a{
+    top:-3px;
+    margin-left:10px;
+    margin-top:2px;
+}
+ul{
+    margin-top:5px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+li{
+    padding-left:5px;
+    list-style-type:none;
+    line-height: 20px;
+}
+li:hover{
+    cursor: pointer;
+    background: url(tab_bg.gif) repeat-x;
+    border:solid 1px #adb9c2;
+}

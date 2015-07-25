@@ -1,0 +1,260 @@
+/* CSS Document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+
+
+
+ul{list-style:none;}
+
+a{ text-decoration:none;}
+.main{
+    position: relative;
+    width:991px;
+    margin: 0 auto;
+}
+#main{
+    width:991px;
+/*    height:1600px;*/
+    margin-bottom: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 8px;
+    border:1px solid #cccccc;
+    box-shadow:2px 2px 6px #000;
+    -webkit-box-shadow:2px 2px 6px #000;
+    -moz-box-shadow:2px 2px 6px #000;
+    -o-box-shadow:2px 2px 6px #000;
+    background:#ebebeb;
+    margin-bottom: 10px;
+   
+}
+#content{
+     width:991px;
+     height:auto;
+     /*border:1px solid red;*/
+}
+#main h3{
+    text-align:center;
+    padding:16px;
+    font-size:20px;
+}
+/*位置*/
+.wz{
+    padding-top: 10px;
+    text-align: left;
+    width:991px;
+    height:30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size:18px;
+}
+.wz a{
+    color:black;
+    text-decoration: none;
+}
+.wz span{
+ 
+    text-align: center;
+    padding-right: 59px;
+
+    padding-left: 20px;
+    font-weight: bold;
+  
+    padding-bottom: 10px;
+    background:url("../image/wz.jpg") no-repeat;
+}
+.bk{
+    width:860px;
+    /*height:100px;*/
+    margin-top:10px;
+    /*border:1px solid red;*/
+}
+.bk_left{margin-left: 20px;
+    width:60px;
+    height:60px;
+    float:left;
+    background:url("../image/user.jpg");
+}
+
+.bk_right{
+    width:700px;
+    /*height:300px;*/
+    border:1px solid silver;
+    float:right;
+    margin-right:30px;
+    position:relative;
+    background:#fff;
+
+}
+
+.imgs{
+    position:absolute;
+    left:-12px;
+    top:20px;
+}
+
+.bt{
+    border-bottom:1px dotted silver;
+    width:660px;
+    height:30px;
+    margin:auto;
+    line-height:30px;
+}
+.hfnr{
+    margin: 0 auto;
+    border-bottom:1px dotted silver;
+    width:660px;
+   text-align: center;
+ line-height:30px;
+  
+
+}
+
+.bt a{
+    color:#009999;
+}
+
+.bt a:hover{
+    color:#000000;
+}
+
+.dw{
+    position:absolute;
+    right:20px;
+}
+
+.nr{
+    text-align: left;
+    width:660px;
+    height:60px;
+    margin:8px auto;
+
+    border-bottom:1px dotted silver;
+}
+
+.sm{
+    width:660px;
+    height:30px;
+    margin:auto;
+    line-height:30px;
+}
+
+.sm a{
+    border:1px solid #FF3366;
+    color:#FF6699;
+    margin-left:10px;
+}
+
+.sm a:hover{
+    background:#CCCCCC;
+    color:#fff;
+    border-color:#CCC;
+}
+/*以下为翻页用到的样式*/
+.hd_fy{
+    margin-top: 20px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    margin-right: 100px;
+    
+   
+}
+
+.hd_fy input{
+line-height: 30px;
+}
+
+.fy_ys{
+    background:white;
+    margin-left: 3px;
+    padding:3px 5px;
+    border:1px solid #cccccc;
+}
+.fy_ys a{
+    color:black;
+    text-decoration: none;
+}
+.fy_ys:hover{
+    cursor: pointer;
+    border: 1px solid  #B3DFDA;
+    color: #fff;
+
+}
+
+#ylfb{
+   
+    margin: 0 auto;
+    margin-top: 15px;
+    width:700px;
+/*    height:390px;*/
+/*    padding-left: 50px;*/
+    margin-bottom:10px;
+/*    border:1px solid red;*/
+border-top:1px solid #CCCCCC;
+border-bottom: 1px solid #CCCCCC;
+
+}
+
+#fbxx1{
+    width:100%;
+    height:50px;
+    background:url("../image/bg22.png") 0 0 repeat;
+    text-align:center;
+    line-height:50px;
+    font-size:20px;
+    text-shadow:2px 2px 2px #000;
+    font-weight:bold;
+
+
+}/*
+
+*/#fbxx2{
+    width:100%;
+    height:40px;
+    background:url('../image/bg11.png') 0 0 no-repeat;
+    /*border:1px solid red;*/
+}/*
+*/
+#fbxx3{
+    width:660px;;
+    /*height:260px;*/
+    background:url('../image/bg22.png') 0 0 repeat;
+   padding: 20px;
+    font-size:18px;
+/*    border:1px solid red;*/
+}
+
+.inp{
+    width:180px;
+    height:20px;
+    margin:5px;
+    background:none;
+    border:1px solid silver;
+
+}
+
+#wbk{
+    margin-left:90px;
+    margin-bottom:8px;
+    border:1px solid #CCC;
+}
+
+.bt1,.bt2{
+    width:50px;
+    height:25px;
+    border:1px solid #CCCCCC;
+    cursor:pointer;
+    font-size:15px;
+    margin-top: 20px;
+}
+.bt1{margin-left:60px;}
+.bt2{margin-left:60px;}
+
+

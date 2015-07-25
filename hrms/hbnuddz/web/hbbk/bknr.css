@@ -1,0 +1,22 @@
+/* 
+    Document   : bknr
+    Created on : 2013-3-1, 18:48:51
+    Author     : Administrator
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.nr{
+    line-height: 25px;
+    width:668px;
+    height:auto;
+    margin-top: 10px;
+    font-size:16px;
+
+}
+.nr1{
+
+    width:660px;
+    height: auto;
+
+}
+

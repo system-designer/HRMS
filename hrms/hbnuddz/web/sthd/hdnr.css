@@ -1,0 +1,33 @@
+/* 
+    Document   : hdnr
+    Created on : 2013-3-29, 15:08:18
+    Author     : ASUS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+    Document   : ggnr
+    Created on : 2013-2-16, 11:23:55
+    Author     : evance
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.nr{
+    line-height: 25px;
+    width:665px;
+    height:auto;
+    margin-top: 10px;
+    padding-right: 5px;
+    font-size:16px;
+
+ 
+}
+.nr1{
+  padding: 10px;
+    width: 661px;
+    height: auto;
+    
+}
+
+

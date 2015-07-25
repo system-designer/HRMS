@@ -1,0 +1,276 @@
+/* 
+    Document   : nr
+    Created on : 2013-3-7, 20:44:41
+    Author     : Ariel
+    Description:
+        Purpose of the stylesheet follows.
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    border:none;
+}
+body{
+  
+    text-align: center;
+}
+.wz{
+    padding-top: 2px;
+    text-align: left;
+    width:991px;
+    height:30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size:18px;
+}
+.wz span{
+    text-align: center;
+    padding-right: 59px;
+
+    padding-left: 20px;
+    font-weight: bold;
+
+    padding-bottom: 8px;
+    background:url("../image/wz.jpg") no-repeat;
+}
+.wz a{
+    text-decoration: none;
+    color:black;
+}
+.main{
+    width:991px;
+    margin: 0 auto;
+    
+
+}
+
+.fh{
+    text-align: left;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    cursor:pointer;
+    border-bottom:1px solid #c2d5e3;
+
+}
+.fh span{
+    font-size:18px;
+    color:white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background: url('../image/nav.jpg') repeat-x;
+    border-radius:8px;;
+}
+.content{
+    height:auto;
+    float:left;
+    width: 991px;
+     border-right:1px solid #cccccc;
+    border-bottom: 5px solid #c2d5e3;
+
+
+}
+.left{
+    width:180px;
+    float:left;
+    padding-bottom: 20px;
+    border-left:1px solid #cccccc;
+ 
+     background: #739fea;
+
+
+}
+.la{
+    height:20px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    font-size:17px;
+    border-bottom:2px solid #c2d5e3;
+}
+.la span,.la1 span{
+    margin-left: 5px;
+}
+.ren{
+
+    margin-top: 10px;
+
+    /*border:1px solid red;*/
+}
+.ren img{
+    border:2px solid white;
+    margin-bottom: 6px;
+}
+.ren1{
+    /*border:1px solid red;*/
+    text-align: left;
+
+    font-size:16px;
+
+    color:#6572c6;
+    font-weight: bolder;
+}
+.ren ul{
+    margin-left: 30px;
+    text-align: left;
+    list-style: none;
+    padding-top: 10px;
+    color:  #3F3F3F;
+    font-size:13px;
+}
+.right{
+    position:relative;
+    height: auto;
+    float:left;
+    width:809px;
+ 
+   
+   
+
+}
+.content4{
+   
+    border-top:1px solid #c2d5e3;
+    float:left;
+    width: 991px;
+    /*background:  #D2E0F2;*/
+     border-right:1px solid #cccccc;
+     border-bottom:  5px solid #c2d5e3;
+}
+.la1{
+    height:20px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    border-bottom:2px solid #c2d5e3;  
+}
+.la1 a{
+    font-size:20px;
+    text-decoration: none;
+    color:blue;
+}
+.fb{
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    color:  #666;
+    border-bottom:1px dashed #cccccc;
+}
+/*//个性签名*/
+
+.htgxqm{
+    position: absolute;
+  width:800px;
+  right:10px;
+
+    text-align:right;
+   padding-left: 10px;
+
+}
+.nr{
+    padding-top: 15px;
+    text-align: left;
+    height:auto;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    /*margin-top: 30px;*/
+    color:#333;
+   
+}
+
+.fthf{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: left;
+    line-height: 30px;
+    cursor:pointer;
+    border-bottom:1px solid #c2d5e3;
+}/*
+*/.fthf span.ft{
+     font-size:18px;
+    color:white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background: url('../image/nav.jpg') repeat-x;
+    border-radius:8px;;
+
+}/*
+*/.fthf label{
+    margin-left: 350px;
+    text-align: right;
+}
+.fthf label span{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /*margin-right: 5px;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #cccccc;
+}
+.fthf label span.ye{
+ font-size:15px;
+    background: none;
+}
+
+.fthf label a{
+    text-decoration: none;
+    color:black;
+}
+.fthf label a:hover{
+    text-decoration: underline;
+    color:red;
+}
+
+.content1{
+
+    height:520px;
+    width: 991px;
+    
+    /*border-bottom:2px solid #c2d5e3;*/ 
+
+}
+.left1{
+    width:180px;
+    height:520px;
+    float:left;
+     background: #739fea;
+
+}
+.nr{
+    margin-left: 20px;
+}
+.tjhf{
+    margin-top: 15px;
+    border-bottom:1px dashed #c2d5e3;
+    padding-bottom: 15px;
+}
+.tjhf1{
+      font-size:18px;
+    color:white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-right: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background: url('../image/nav.jpg') repeat-x;
+    border-radius:8px;;
+
+}
+.tjhf1 hover{
+    border:2px solid #666;
+}
+.qm{
+    margin-top: 10px;
+    color: #3F3F3F;
+}
