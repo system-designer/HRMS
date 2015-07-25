@@ -1,3 +1,0 @@
-$(function(){
-    $(".ui-accodin").accodin();
-});
