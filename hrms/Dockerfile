@@ -24,7 +24,7 @@ RUN wget -q https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION
 RUN rm -r /tomcat/webapps/ROOT	
 	
 # Add hrms stuff into tomcat server
-COPY . /tomcat/webapps/hrms	
+COPY . /tomcat/webapps/ROOT	
 	
 ADD create_tomcat_admin_user.sh /create_tomcat_admin_user.sh
 ADD run.sh /run.sh
